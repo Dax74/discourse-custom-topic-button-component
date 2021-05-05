@@ -1,7 +1,5 @@
 <script type="text/discourse-plugin" version="0.8">
 
-   var level = Discourse.User.currentProp("trust_level");
-   if (level >=0) {
 
   api.registerTopicFooterButton({
     id: "discourse-custom-topic-button",
@@ -36,5 +34,5 @@
     displayed() {
       return settings.custom_topic_button_enabled;
     }
-  })};
+  });
 </script>
